@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="دليل فعاليات الجامعة الافتراضية السورية: فعاليات ثقافية ورياضية وموسيقية وعائلية وتقنية في مكان واحد.">
+  <title>الرئيسية | دليل فعاليات الجامعة الافتراضية</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+
+  <!-- Bootstrap RTL + الأيقونات + خط Cairo -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ملف التنسيق الخاص بنا -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== الهيدر ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="شعار دليل الفعاليات">
+        <span>دليل فعاليات <strong>SVU</strong></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="فتح القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+        </ul>
+
+        <button class="dark-btn ms-lg-3 mt-3 mt-lg-0" id="darkModeBtn" type="button" aria-label="تبديل الوضع الليلي">
+          <i class="bi bi-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== الهيرو ===================== -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge"><i class="bi bi-stars"></i> فعاليات الجامعة الافتراضية</span>
+        <h1>كل فعاليات <span>SVU</span> في مكان واحد</h1>
+        <p>اكتشف الأنشطة الثقافية والرياضية والموسيقية والعائلية، وتابع مواعيدها، واحجز مكانك بسهولة.</p>
+
+        <a href="events.html" class="btn btn-main btn-lg">تصفح الفعاليات</a>
+        <a href="about.html" class="btn btn-outline-main btn-lg">عن الدليل</a>
+
+        <p class="hero-note"><i class="bi bi-calendar-check"></i> 12 فعالية • 5 تصنيفات • 6 مواقع</p>
+      </div>
+    </section>
+
+    <!-- ===================== فعاليات بارزة ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-line"></div>
+        <h2 class="section-title">فعاليات بارزة هذا الأسبوع</h2>
+        <p class="section-sub">أهم الفعاليات القريبة التي لا تفوّتها.</p>
+
+        <div id="featuredCarousel" class="carousel slide featured-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators" id="featuredIndicators"></div>
+
+          <div class="carousel-inner" id="featuredInner">
+            <!-- يتم تعبئتها من JavaScript -->
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== التصنيفات ===================== -->
+    <section class="section section-white">
+      <div class="container">
+        <div class="section-line"></div>
+        <h2 class="section-title">تصنيفات سريعة</h2>
+        <p class="section-sub">اختر التصنيف الذي يناسبك.</p>
+
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg">
+            <a href="events.html?category=ثقافة" class="category-box">
+              <i class="bi bi-book"></i>
+              <span>ثقافة</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <a href="events.html?category=رياضة" class="category-box">
+              <i class="bi bi-trophy"></i>
+              <span>رياضة</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <a href="events.html?category=موسيقى" class="category-box">
+              <i class="bi bi-music-note-beamed"></i>
+              <span>موسيقى</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <a href="events.html?category=عائلي" class="category-box">
+              <i class="bi bi-people"></i>
+              <span>عائلي</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <a href="events.html?category=تقنية" class="category-box">
+              <i class="bi bi-cpu"></i>
+              <span>تقنية</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== أحدث الفعاليات ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+          <div>
+            <div class="section-line"></div>
+            <h2 class="section-title">أحدث الفعاليات</h2>
+            <p class="section-sub mb-0">آخر ما أضفناه إلى الدليل.</p>
+          </div>
+
+          <a href="events.html" class="btn btn-outline-main">كل الفعاليات</a>
+        </div>
+
+        <div class="row g-4" id="latestEvents">
+          <!-- يتم تعبئتها من JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== فريق العمل ===================== -->
+    <section class="section section-white">
+      <div class="container">
+        <div class="section-line"></div>
+        <h2 class="section-title">فريق العمل</h2>
+        <p class="section-sub">أعضاء الفريق المشاركون في مشروع مادة BWP401.</p>
+
+        <div class="row g-4" id="teamGrid">
+          <!-- يتم تعبئتها من JavaScript -->
+        </div>
+
+        <!-- نسخة ثابتة تظهر فقط إذا كان JavaScript معطلاً -->
+        <noscript>
+          <div class="alert alert-warning mt-4">
+            <h5 class="alert-heading">أعضاء الفريق</h5>
+            <ul class="mb-0">
+              <li>دانيا نبيل الحريري — dania_324789 — C6</li>
+              <li>عبد الله عمر الحاج علي — Abd_ullah_296750 — C6</li>
+              <li>صفية رياض محمد — Safeyah_211625 — C8</li>
+            </ul>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===================== دعوة للتواصل ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>هل لديك فعالية تريد إضافتها؟</h2>
+          <p>تواصل معنا وسنراجع طلبك قبل نشره في الدليل.</p>
+          <a href="contact.html" class="btn btn-main">اتصل بنا</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== الفوتر ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5><i class="bi bi-calendar-event"></i> دليل فعاليات SVU</h5>
+          <p>منصة تجريبية تجمع فعاليات الجامعة الافتراضية في مكان واحد، وتسهّل على الطلاب متابعة الأنشطة الثقافية والرياضية والفنية.</p>
+
+          <p class="mt-3"><i class="bi bi-info-circle"></i> حسابات التواصل غير مفعّلة في هذه النسخة التعليمية.</p>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>روابط سريعة</h5>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="events.html">كل الفعاليات</a></li>
+            <li><a href="about.html">عن الدليل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>تواصل معنا</h5>
+          <p><i class="bi bi-envelope"></i> قناة البريد غير مفعّلة في النسخة التجريبية</p>
+          <p><i class="bi bi-geo-alt"></i> دمشق، سوريا</p>
+          <p><i class="bi bi-telephone"></i> رقم الهاتف تجريبي وغير مخصص للتواصل</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 دليل فعاليات الجامعة الافتراضية — مشروع مادة BWP401 | الصور من Unsplash
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" type="button" aria-label="الرجوع للأعلى">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS + ملف JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
